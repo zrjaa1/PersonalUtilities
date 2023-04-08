@@ -71,17 +71,17 @@ var trace1 = {
     x: x_medical_expense,
     y: y_gHIP_personal_cost,
     mode: 'lines+markers',
-    name: 'lines+markers'
+    name: 'gHIP'
   };
   
-  var trace2 = {
-    x: x_medical_expense,
-    y: y_PPO_personal_cost,
-    mode: 'lines+markers',
-    name: 'lines+markers'
-  };
-  
-  data = [trace1, trace2];
-  
-  // Draw the XY graph.
-  Plotly.newPlot('myDiv', data);
+var trace2 = {
+x: x_medical_expense,
+y: y_PPO_personal_cost,
+mode: 'lines+markers',
+name: 'PPO'
+};
+
+data = [trace1, trace2];
+
+// Draw the XY graph.
+Plotly.newPlot('myDiv', data);
